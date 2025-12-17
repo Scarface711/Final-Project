@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ - Table Guide</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="base.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <!-- ナビゲーションバー -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-film"></i> Table Guide
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">ホーム</a></li>
+                    <li class="nav-item"><a class="nav-link" href="restaurant-list.html">店舗一覧</a></li>
+                    <li class="nav-item"><a class="nav-link" href="restaurant-ranking.html">ランキング</a></li>
+                    <li class="nav-item"><a class="nav-link" href="restaurant-mylist.html">マイリスト</a></li>
+                    <li class="nav-item"><a class="nav-link" href="restaurant-community.html">コミュニティ</a></li>
+                    <li class="nav-item d-lg-none"><a class="nav-link" href="restaurant-login.html">ログイン</a></li>
+                </ul>
+                <a href="restaurant-login.html" class="btn btn-light ms-3 d-none d-lg-block">
+                    <i class="bi bi-person-circle"></i> ログイン
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ページタイトル -->
+    <section class="hero-section d-flex align-items-center">
+        <div class="container py-5 text-center text-light">
+            <h1 class="display-5 fw-bold mb-3">お問い合わせ</h1>
+            <p class="lead mb-0">本サイトに関するご意見やご質問を受け付けています。</p>
+        </div>
+    </section>
+
+    <main class="py-5">
+        <div class="container">
+            <!-- パンくず -->
+            <nav aria-label="breadcrumb" class="mb-4">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">ホーム</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">お問い合わせ</li>
+                </ol>
+            </nav>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow-sm">
+                        <div class="card-body p-4">
+
+                            <h2 class="h4 fw-bold mb-3">
+                                <i class="bi bi-envelope"></i> お問い合わせフォーム
+                            </h2>
+                            <p class="text-muted small mb-4">※印のついた項目は必須入力です。</p>
+
+                            <form action="#" method="post">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">お名前<span class="text-danger">※</span></label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">メールアドレス<span
+                                            class="text-danger">※</span></label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="category" class="form-label">お問い合わせ種別<span
+                                            class="text-danger">※</span></label>
+                                    <select class="form-select" id="category" name="category" required>
+                                        <option selected disabled>選択してください</option>
+                                        <option value="bug">サイトの不具合について</option>
+                                        <option value="request">機能追加・改善のご要望</option>
+                                        <option value="review">店舗情報・レビューに関するお問い合わせ</option>
+                                        <option value="other">その他のお問い合わせ</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">件名<span class="text-danger">※</span></label>
+                                    <input type="text" class="form-control" id="subject" name="subject" required>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="message" class="form-label">お問い合わせ内容<span
+                                            class="text-danger">※</span></label>
+                                    <textarea class="form-control" id="message" name="message" rows="6"
+                                        required></textarea>
+                                </div>
+
+                                <div class="mb-4 form-check">
+                                    <input type="checkbox" class="form-check-input" id="agree" required>
+                                    <label class="form-check-label small" for="agree">
+                                        <a href="terms.html" target="_blank">利用規約</a> および
+                                        <a href="privacy.html" target="_blank">プライバシーポリシー</a> に同意します
+                                    </label>
+                                </div>
+
+                                <div class="d-grid d-md-flex justify-content-md-end">
+                                    <button type="submit" class="btn btn-primary px-4">
+                                        <i class="bi bi-send"></i> 送信する
+                                    </button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- フッター -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="fw-bold mb-3"><i class="bi bi-film"></i> Table Guide</h5>
+                    <p class="text-light">あなたの好きな店舗を見つけて、共有しよう。</p>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h6 class="fw-bold mb-3">サイト情報</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">About</a></li>
+                        <li><a href="terms.html" class="text-light text-decoration-none">利用規約</a></li>
+                        <li><a href="privacy.html" class="text-light text-decoration-none">プライバシー</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h6 class="fw-bold mb-3">サポート</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="help.html" class="text-light text-decoration-none">ヘルプ</a></li>
+                        <li><a href="contact.html" class="text-light text-decoration-none">お問い合わせ</a></li>
+                        <li><a href="faq.html" class="text-light text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h6 class="fw-bold mb-3">フォローする</h6>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-light"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-youtube fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-discord fs-4"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-light">
+            <p class="text-center text-light mb-0">&copy; 2025 Table Guide. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

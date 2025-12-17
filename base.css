@@ -7,13 +7,13 @@
 }
 
 .navbar {
-  background-color: #1c2432;
+  background-color: #C93C20;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .hero-section,
 .page-heading {
-  background: linear-gradient(180deg, #1d2734 0%, #404a5d 100%);
+  background: linear-gradient(180deg, #C93C20 0%, #D84C2B 100%);
   color: #ffffff;
   padding: 80px 0;
   margin-bottom: 40px;
@@ -58,6 +58,7 @@
 
 body {
   font-family: "Noto Sans JP", sans-serif;
+  background-color: #F9E7D7;
 }
 
 h1,
@@ -105,7 +106,7 @@ h6,
 }
 
 footer {
-  background-color: #1c2432;
+  background-color: #C93C20;
   color: white;
   margin-top: 60px;
 }
