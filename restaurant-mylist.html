@@ -101,7 +101,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">
-                <i class="bi bi-film"></i> Table Guide
+                <i class="bi bi-shop"></i> Table Guide
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -145,8 +145,8 @@
 
     <div class="container">
         <!-- 統計カード -->
-        <div class="row g-4 mb-5">
-            <div class="col-md-3">
+        <div class="row g-4 mb-5 justify-content-center">
+            <div class="col-md-4 col-lg-3">
                 <div class="card stat-card border-primary">
                     <div class="card-body text-center">
                         <i class="bi bi-play-circle-fill text-primary display-4 mb-3"></i>
@@ -155,7 +155,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+
+            <div class="col-md-4 col-lg-3">
                 <div class="card stat-card border-success">
                     <div class="card-body text-center">
                         <i class="bi bi-check-circle-fill text-success display-4 mb-3"></i>
@@ -164,7 +165,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+
+            <div class="col-md-4 col-lg-3">
                 <div class="card stat-card border-warning">
                     <div class="card-body text-center">
                         <i class="bi bi-clock-fill text-warning display-4 mb-3"></i>
@@ -173,15 +175,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="col-md-3">
-                <div class="card stat-card border-danger">
-                    <div class="card-body text-center">
-                        <i class="bi bi-x-circle-fill text-danger display-4 mb-3"></i>
-                        <h3 class="fw-bold mb-1">8</h3>
-                        <p class="text-muted mb-0">視聴中断</p>
-                    </div>
-                </div>
-            </div> -->
         </div>
 
         <!-- タブナビゲーション -->
@@ -210,14 +203,6 @@
                     <span class="d-inline d-sm-none">予定</span>
                 </button>
             </li>
-            <!-- <li class="nav-item" role="presentation">
-                <button class="nav-link" id="dropped-tab" data-bs-toggle="pill" data-bs-target="#dropped" type="button"
-                    role="tab">
-                    <i class="bi bi-x-circle"></i>
-                    <span class="d-none d-sm-inline">視聴中断 (8)</span>
-                    <span class="d-inline d-sm-none">中断</span>
-                </button>
-            </li> -->
         </ul>
 
         <!-- タブコンテンツ -->
@@ -637,84 +622,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- 視聴中断タブ -->
-            <!-- <div class="tab-pane fade" id="dropped" role="tabpanel">
-                <div class="card mb-4">
-                    <div class="card-header bg-danger text-white">
-                        <h5 class="mb-0"><i class="bi bi-x-circle-fill"></i> 視聴中断した作品</h5>
-                    </div>
-                    <div class="card-body p-0">
-                        <div class="table-responsive-md">
-                            <table class="table table-hover mb-0">
-                                <thead class="table-light">
-                                    <tr>
-                                        <th style="width: 100px;">作品</th>
-                                        <th>タイトル</th>
-                                        <th style="width: 150px;">中断時点</th>
-                                        <th style="width: 150px;">中断日</th>
-                                        <th style="width: 100px;">操作</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="anime-table-card">
-                                        <td>
-                                            <img src="images/ロボット大戦記.webp" class="anime-thumbnail" alt="作品1">
-                                        </td>
-                                        <td>
-                                            <h6 class="mb-1 fw-bold text-clamp-2">ロボット大戦記</h6>
-                                            <div>
-                                                <span class="badge bg-info status-badge">SF</span>
-                                                <span class="badge bg-secondary status-badge">完結</span>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <small class="text-muted">3話 / 24話 (13%)</small>
-                                        </td>
-                                        <td>
-                                            <small class="text-muted">2024/09/20</small>
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-sm btn-outline-primary" title="詳細">
-                                                <i class="bi bi-eye"></i>
-                                            </button>
-                                            <button class="btn btn-sm btn-outline-danger" title="削除">
-                                                <i class="bi bi-trash"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr class="anime-table-card">
-                                        <td>
-                                            <img src="images/学園コメディ.webp" class="anime-thumbnail" alt="作品2">
-                                        </td>
-                                        <td>
-                                            <h6 class="mb-1 fw-bold text-clamp-2">学園コメディ!</h6>
-                                            <div>
-                                                <span class="badge" style="background-color: #fbbf24;">コメディ</span>
-                                                <span class="badge bg-secondary status-badge">完結</span>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <small class="text-muted">2話 / 12話 (17%)</small>
-                                        </td>
-                                        <td>
-                                            <small class="text-muted">2024/08/15</small>
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-sm btn-outline-primary" title="詳細">
-                                                <i class="bi bi-eye"></i>
-                                            </button>
-                                            <button class="btn btn-sm btn-outline-danger" title="削除">
-                                                <i class="bi bi-trash"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
         </div>
 
 
@@ -741,9 +648,6 @@
                                 <div class="progress-bar bg-warning" style="width: 29%">
                                     <small>来店予定 23</small>
                                 </div>
-                                <!-- <div class="progress-bar bg-danger" style="width: 9%">
-                                    <small>中断 8</small>
-                                </div> -->
                             </div>
                         </div>
 
@@ -833,7 +737,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-3">
-                    <h5 class="fw-bold mb-3"><i class="bi bi-film"></i> Table Guide</h5>
+                    <h5 class="fw-bold mb-3"><i class="bi bi-shop"></i> Table Guide</h5>
                     <p class="text-light">あなたの好きな店舗を見つけて、共有しよう。</p>
                 </div>
                 <div class="col-md-2 mb-3">
