@@ -9,4 +9,7 @@
 - ヘルプ (help.html)
 - お問い合わせ (contact.html)
 - FAQ (faq.html)
+
+---
+
 上記の6つを新規作成しました。また、画像の生成にはChatGPTを使用しました。
